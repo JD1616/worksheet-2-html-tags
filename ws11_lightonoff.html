@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+
+            function turnBulb(){
+               var bulb= document.getElementById("bulb");
+               if(bulb.src.match("light_on.png")){
+                bulb.src = "light_off.png";
+               }else{
+                bulb.src = "light_on.png";
+               }
+               
+            }
+        </script>
+
+        <img id="bulb" src="light_off.png"/>
+        <button onclick="turnBulb();">On/OFF Switch</button>
+
+    </body>
+</html> 
